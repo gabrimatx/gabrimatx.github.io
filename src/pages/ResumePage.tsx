@@ -24,7 +24,6 @@ import {
   IconMapPin,
   IconBrandLinkedin,
   IconBrandGithub,
-  IconLink, // Generic link icon
 } from "@tabler/icons-react";
 
 // Helper component for consistent section titles
@@ -36,7 +35,7 @@ const SectionTitle = ({ children }: { children: React.ReactNode }) => (
 
 // Helper for Tech Badges
 const TechBadge = ({ tech }: { tech: string }) => (
-  <Badge variant="light" size="sm" radius="sm" mr={5} mt={3}>
+  <Badge size="sm" radius="sm" mr={5} mt={3}>
     {tech}
   </Badge>
 );
@@ -116,7 +115,7 @@ export function ResumePage() {
             size="sm"
             mt="sm"
             icon={
-              <ThemeIcon size={16} light Varian light color="gray" radius="xl">
+              <ThemeIcon size={16} color="gray" radius="xl">
                 <IconPointFilled size={10} />
               </ThemeIcon>
             }
@@ -173,7 +172,7 @@ export function ResumePage() {
             size="sm"
             mt="sm"
             icon={
-              <ThemeIcon size={16} light color="gray" radius="xl">
+              <ThemeIcon size={16} color="gray" radius="xl">
                 <IconPointFilled size={10} />
               </ThemeIcon>
             }
@@ -214,7 +213,7 @@ export function ResumePage() {
             size="sm"
             mt="sm"
             icon={
-              <ThemeIcon size={16} light color="gray" radius="xl">
+              <ThemeIcon size={16} color="gray" radius="xl">
                 <IconPointFilled size={10} />
               </ThemeIcon>
             }
@@ -262,7 +261,7 @@ export function ResumePage() {
             size="sm"
             mt="sm"
             icon={
-              <ThemeIcon size={16} light color="gray" radius="xl">
+              <ThemeIcon size={16} color="gray" radius="xl">
                 <IconPointFilled size={10} />
               </ThemeIcon>
             }
@@ -294,7 +293,7 @@ export function ResumePage() {
             size="sm"
             mt="sm"
             icon={
-              <ThemeIcon size={16} light color="gray" radius="xl">
+              <ThemeIcon size={16} color="gray" radius="xl">
                 <IconPointFilled size={10} />
               </ThemeIcon>
             }
@@ -325,7 +324,7 @@ export function ResumePage() {
             size="sm"
             mt="sm"
             icon={
-              <ThemeIcon size={16} light color="gray" radius="xl">
+              <ThemeIcon size={16} color="gray" radius="xl">
                 <IconPointFilled size={10} />
               </ThemeIcon>
             }
