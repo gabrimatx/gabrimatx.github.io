@@ -1,28 +1,22 @@
-// src/main.tsx
+/// src/main.tsx
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { MantineProvider, createTheme } from "@mantine/core"; // Import MantineProvider and createTheme
+import { MantineProvider, createTheme } from "@mantine/core";
+import { BrowserRouter } from "react-router-dom"; // Import BrowserRouter
 import App from "./App";
 import "./index.css";
-
-// Import Mantine core styles
 import "@mantine/core/styles.css";
 
-// Optional: Define a custom theme or use the default
-const theme = createTheme({
-  // You can add customizations here later if needed
-  fontFamily: "Verdana, sans-serif",
-  // primaryColor: 'cyan',
-});
+const theme = createTheme({});
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    {/* Add MantineProvider */}
-    <MantineProvider
-      theme={theme} // Apply the theme
-      defaultColorScheme="dark" // Set default theme to dark!
-    >
-      <App />
-    </MantineProvider>
+    <BrowserRouter>
+      {" "}
+      {/* Wrap App with BrowserRouter */}
+      <MantineProvider theme={theme} defaultColorScheme="dark">
+        <App />
+      </MantineProvider>
+    </BrowserRouter>
   </React.StrictMode>,
 );
