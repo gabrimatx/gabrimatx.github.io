@@ -5,7 +5,7 @@ const HomePage: React.FC = () => {
   return (
     <div>
       <h1>Welcome!</h1>
-      <p>This is the home page of Gabriele Matiddi's portfolio.</p>
+      <p>My name is Gabriele, I am currently a software engineer at Grammarly.</p>
       {/* Add more content here */}
     </div>
   );
