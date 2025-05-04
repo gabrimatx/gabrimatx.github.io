@@ -46,57 +46,9 @@ export function ResumePage() {
       {/* --- Header / Contact Info --- */}
       <Stack align="center" mb="xl">
         <Title order={1}>Gabriele Matiddi</Title>
-        <Group gap="xs" wrap="wrap" justify="center">
-          <Group gap={5}>
-            <IconPhone size={16} stroke={1.5} />
-            <Text size="sm">+39 3296211865</Text>
-          </Group>
-          <Text size="sm" c="dimmed">
-            |
-          </Text>
-          <Group gap={5}>
-            <IconMapPin size={16} stroke={1.5} />
-            <Text size="sm">Berlin</Text>
-          </Group>
-          <Text size="sm" c="dimmed">
-            |
-          </Text>
-          <Group gap={5}>
-            <IconMail size={16} stroke={1.5} />
-            <Anchor href="mailto:gabrimat1@protonmail.ch" size="sm">
-              gabrimat1@protonmail.ch
-            </Anchor>
-          </Group>
-          <Text size="sm" c="dimmed">
-            |
-          </Text>
-          <Group gap={5}>
-            <IconBrandLinkedin size={16} stroke={1.5} />
-            <Anchor
-              href="https://www.linkedin.com/in/gabrielematiddi/"
-              target="_blank"
-              rel="noopener noreferrer"
-              size="sm"
-            >
-              {" "}
-              {/* <-- TODO: Verify/Update LinkedIn URL */}
-              LinkedIn
-            </Anchor>
-          </Group>
-          <Text size="sm" c="dimmed">
-            |
-          </Text>
-          <Group gap={5}>
-            <IconBrandGithub size={16} stroke={1.5} />
-            <Anchor
-              href="https://github.com/gabrimatx"
-              target="_blank"
-              rel="noopener noreferrer"
-              size="sm"
-            >
-              GitHub
-            </Anchor>
-          </Group>
+        <Group gap={5}>
+          <IconMapPin size={16} stroke={1.5} />
+          <Text size="sm">Berlin</Text>
         </Group>
       </Stack>
       {/* --- Experience --- */}
