@@ -1,35 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// src/App.tsx
+import {
+  AppShell,
+  Burger,
+  Group,
+  Title,
+  Text,
+  Container,
+  Button,
+} from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [opened, { toggle }] = useDisclosure();
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <AppShell
+      navbar={{ width: 300, breakpoint: "sm", collapsed: { mobile: !opened } }}
+      padding="md"
+    >
+      <AppShell.Navbar p="md">
+        Navbar Content (Links etc.)
+        {/* Example: <Button variant="subtle">Link 1</Button> */}
+      </AppShell.Navbar>
+
+      <AppShell.Main>
+        <Container>
+          <Title order={1} ta="center" mt="xl" mb="lg">
+            Welcome!
+          </Title>
+          <Text ta="center" size="xl" mb="xl">
+            This is your React + TypeScript + Mantine dark-themed site.
+          </Text>
+          <Group justify="center">
+            <Button size="lg" variant="light">
+              Get Started
+            </Button>
+            <Button size="lg" variant="outline">
+              Learn More
+            </Button>
+          </Group>
+        </Container>
+      </AppShell.Main>
+    </AppShell>
+  );
 }
 
-export default App
+export default App;
