@@ -141,7 +141,7 @@ function HomePageContent() {
       </Title>
       <Text size="xl" mb="xl">
         I am Gabriele Matiddi, and I am currently a software engineer at
-        Grammarly, where I returned as a full time employee after an internhsip.
+        Grammarly, where I returned as a full time employee after an internship.
         I obtained my bachelor's degree in computer science & AI at Sapienza
         University of Rome with honours.
       </Text>

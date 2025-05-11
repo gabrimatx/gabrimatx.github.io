@@ -9,7 +9,6 @@ import {
   ThemeIcon,
   Badge,
   Group,
-  Anchor,
   Space,
 } from "@mantine/core";
 import {
@@ -19,11 +18,7 @@ import {
   IconCode,
   IconAward,
   IconStar,
-  IconPhone,
-  IconMail,
   IconMapPin,
-  IconBrandLinkedin,
-  IconBrandGithub,
 } from "@tabler/icons-react";
 
 // Helper component for consistent section titles
